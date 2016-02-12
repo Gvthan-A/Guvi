@@ -1,0 +1,12 @@
+
+
+
+public int leastDigit(int digit,int reduce){
+		String leastDigit = "";
+		char eachDigits[] = (digit+"").toCharArray();
+		Arrays.sort(eachDigits);
+		for(int i = 0;i< eachDigits.length - reduce;i++){
+			leastDigit+=eachDigits[i];
+		}
+		return Integer.parseInt(leastDigit);
+	}
